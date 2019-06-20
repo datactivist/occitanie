@@ -129,7 +129,7 @@ Dans le langage courant, cela fait .red[**près de 10 ans**] que l'ouverture des
 ![](https://datactivist.coop/dataliteracy/img/photofamille.jpg)
 ]
 ---
-### 2015 : la [charte internationale de l'open data]()
+### 2015 : la [charte internationale de l'open data](https://opendatacharter.net/)
 .reduite[.center[
 ![](img/odcharter.png)
 ]]
@@ -313,7 +313,14 @@ class: inverse, center, middle
 
 La Région Occitanie apparait comme une des plus en pointe avec une forte mobilisation des collectivités locales impulsée par des dynamiques de mutualisation et d'effet de réseau. 
 
-.reduite.center[![](./img/carte.png)](http://slides.com/loichay/resultats-odt-oct18#/)
+.reduite.center[
+[![](./img/carte.png)](http://slides.com/loichay/resultats-odt-oct18#/)
+]
+
+---
+### Présentation du portail de la région Occitanie
+
+![](img/portail.gif)
 
 ---
 
