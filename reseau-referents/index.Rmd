@@ -73,7 +73,7 @@ Les productions de Datactivist sont librement réutilisables selon les termes de
 ---
 ### .red[Rappel] : les 4 champs d'activité de la culture des données
 
-.reduite[![](./img/dataposition.png)]
+.reduite.center[![](./img/dataposition.png)]
 
 .footnote[Source : [Datactive](https://docs.google.com/presentation/d/1bK0kgQEf0sFfSHjUcv3gNLsbKsGCU6Ylb_z7IFM-DIw/edit#slide=id.g1bb6c8eb9a_1_27)]
 
@@ -86,7 +86,7 @@ Les productions de Datactivist sont librement réutilisables selon les termes de
 ### Des compétences d'.red[interprétation des données] à renforcer
 
 .center[
-![](./img/questions_interpreter.png)
+![](./img/questions_interpreter.png)]
 
 ---
 class:inverse,middle,center
@@ -133,7 +133,7 @@ Nous allons suivre la méthodologie du [Data Pipeline](http://schoolofdata.org/m
 
 ---
 
-### Définir, c'est trouver un angle à votre sujet
+### Définir, c'est trouver un .red[angle] à votre sujet
 
 ![](./img/expe.png)
 .footnote[[](https://fr.okfn.org/2014/07/03/a-la-conquete-des-donnees-sur-la-pollution-de-lair/)]
@@ -192,7 +192,7 @@ Sans filtre par facette, à la requête écoles, on a des résultats étonnants 
 En gardant uniquement "Education Nationale"" dans la facette organisation, on s'assure de trouver des données nationales. 
 ]
 ---
-### Utiliser Google Dataset Search
+### Utiliser .red[Google] Dataset Search
 
 Google propose depuis quelques temps ce [moteur de recherche](https://toolbox.google.com/datasetsearch) aggrégant de très nombreux portails open data. Les résultats sont inégaux mais le moteur est encore nouveau…
 
@@ -204,7 +204,7 @@ OpenDataSoft référence tous les jeux de données publiés sur l'ensemble de se
 
 ![](./img/dataods.png)
 ---
-### Trouver le bon tag sur OSM
+### Trouver le bon .red[tag] sur OSM
 La page "[Elements Cartographiques](https://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques)" sur le wiki d'OSM recense tous les tags utilisés dans la base de données. 
 
 [![](./img/mapfeatures.png)](https://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques)
@@ -323,7 +323,7 @@ data.gouv.fr permet aux usagers de discuter autour des données, cela vous aider
 ]
 
 ---
-### Open Refine pour nettoyer les données
+### Open .red[Refine] pour nettoyer les données
 
 [OpenRefine](http://openrefine.org/) est un outil puissant pour explorer, transformer et rapprocher des données. 
 
@@ -386,7 +386,7 @@ Workbench propose de nombreux outils de traitement et de visualisation des donn�
 ]
 
 ---
-### .red[La data visualisation : pour quoi faire?]
+### .red[La data visualisation] : pour quoi faire?
 
 <BR>
 
@@ -429,7 +429,7 @@ Selon l'Organisation internationale des migrations, 3108 migrant·e·s ont trouv
 
 
 ---
-### .red[Un exemple de dataviz]
+### .red[Un exemple] de dataviz
 
 
 #### Voici une dataviz réalisée à partir des données précédentes
@@ -483,11 +483,17 @@ https://datavizproject.com/
 ]
 
 ---
-###.red[Des outils]en fonction des usages
+###.red[Des outils] en fonction des usages
 .center[.reduite[![](./img/Tous_les_outils.PNG)]]
 ---
+### Les .red[trois qualités] d'une visualisation 
 
-### L'interprétation des données
+.center.reduite[
+![](https://datactivist.coop/infolab_poitiers/dataviz_sandwich/img/Venn_Dataviz.png)
+]
+---
+
+### L'.red[interprétation] des données
 
 Souvent les données sont accompagnées de **contexte et d'analyse**, qui donnent lieu à une certaine .red[**interprétation**]. Ces éléments peuvent différer d'une source à une autre, il est donc utile de les croiser régulièrement. 
 
@@ -497,14 +503,14 @@ Souvent les données sont accompagnées de **contexte et d'analyse**, qui donnen
 
 ---
 
-### En guise de rappel... :)
+### En guise de .red[rappel]... :)
 
 .center[<img src="./img/pollution.png" height="400"/>]
 
 .footnote[© Xavier Gorce]
 
 ---
-### Médiane ou Moyenne ?
+### .red[Médiane] ou Moyenne ?
 
 D'après-vous, l'écart est-il significatif entre le salaire moyen et médian ?
 
@@ -516,14 +522,14 @@ Soit une différence de près de **450€** !
 .center[[<img src="./img/salaireinsee.png" height="340"/>](https://www.insee.fr/fr/statistiques/2121609#consulter)]
 
 ---
-### Médiane ou Moyenne ?
+### .red[Médiane] ou Moyenne ?
 
 Rappelez-vous que **la moyenne est très sensible aux .red[valeurs extrêmes]...**
 
 .center[[<img src="./img/milliardaire.png" height="400"/>](https://www.insee.fr/fr/statistiques/2121609#consulter)]
 
 ---
-### Corrélation ou causalité ?
+### .red[Corrélation] ou causalité ?
 
 Rappel : une corrélation fortement positive, avec un coefficient de corrélation (r) > 0,5, signifie seulement que deux variables évoluent dans le même sens. Cela ne dit **rien** sur le possible lien entre elles
 - Faites attention aux **corrélations fallacieuses** !
@@ -532,14 +538,14 @@ Rappel : une corrélation fortement positive, avec un coefficient de corrélatio
 .center[[<img src="./img/spurious.png" height="250"/>](http://tylervigen.com/spurious-correlations)]
 
 ---
-### Corrélation ou causalité ?
+### .red[Corrélation] ou causalité ?
 
 A l'instar du site parodique ["Spurious Correlations"](http://tylervigen.com/spurious-correlations) dont le graphique précédent est issu, les Décodeurs du monde ont récemment lancé un [générateur aléatoire de comparaisons](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html). Un bon moyen pour ne plus jamais faire la confusion entre corrélation ou causalité !
 
 .center[<img src="./img/decodeurs.png" height="350"/>]
 
 ---
-### Corrélation ou causalité ?
+### .red[Corrélation] ou causalité ?
 
 - En ce qui concerne les corrélations, il faut être attentif au **.red[nombre d'unités observées]** : moins il y a d'observations, plus la corrélation est facilement élevée. Ce n'est pas pareil de regarder la corrélation entre 2 variables sur 13 régions ou sur 35 000 villes
 
@@ -548,14 +554,14 @@ A l'instar du site parodique ["Spurious Correlations"](http://tylervigen.com/spu
 - Il faut également être prudent sur l'échelle spatiale utilisée : la corrélation entre le % d'immigrants et le vote FN est positif à l'échelle du département. Mais à l'intérieur de ces départements, **ce sont dans les zones avec la plus faible proportion d'immigrants que les personnes votent FN**. Ainsi, au niveau micro la corrélation peut être inversée que ce qui était observé au niveau macro
 
 ---
-### Corrélation ou causalité ?
+### .red[Corrélation] ou causalité ?
 
 .center[<img src="./img/lebras.png" height="350"/>]
 
-.footnotes[Credits Hervé Le Bras]
+.footnote[Credits Hervé Le Bras]
 
 ---
-### Corrélation ou causalité ?
+### .red[Corrélation] ou causalité ?
 
 - Les zones combinant le plus de difficultés sont corrélées avec celles ayant une part des suffrages élevée pour Marine Le Pen à la présidentielle de 2012
 
@@ -567,15 +573,15 @@ A l'instar du site parodique ["Spurious Correlations"](http://tylervigen.com/spu
 Hervé Le Bras, dans son article pour The Conversation ["La France inégale : Qui vote FN ? Pas forcément ceux à qui l’on pense"](https://theconversation.com/la-france-inegale-qui-vote-fn-pas-forcement-ceux-a-qui-lon-pense-75977) (**obligatoire**)
 
 ---
-### Corrélation ou causalité ?
+### .red[Corrélation] ou causalité ?
 
 <BR><BR><BR>
 .center[<img src="./img/causalite.png" height="200"/>]
 
-.footnotes[Credits XKCD]
+.footnote[Credits XKCD]
 
 ---
-### Les facteurs cachés
+### Les facteurs .red[cachés]
 
 Il existe des facteurs qu'on ne voit pas ou auxquels on ne pense généralement pas mais qui peuvent fortement influer sur des résultats.
 - Exemple ici avec la forte baisse du nombre de décès sur les routes en France entre 2003 et 2014
@@ -585,7 +591,7 @@ Il existe des facteurs qu'on ne voit pas ou auxquels on ne pense généralement 
 - Est-ce que les politiques actives de lutte contre l'insécurité routière mises en place dans les années 2000 sont la seule explication de cette baisse ? D'autres facteurs "cachés" peuvent aussi avoir eu un rôle significatif
 
 ---
-### Les facteurs cachés
+### Les facteurs .red[cachés]
 
 Quelques exemples :
 
@@ -598,7 +604,7 @@ Quelques exemples :
 - La **qualité des voitures** s'est fortement améliorée, et notamment l'aspect sécurité (airbags)
 
 ---
-### Le périmètre du dénominateur
+### Le périmètre du .red[dénominateur]
 
 Lorsqu'il est question de **.red[ratio]**, il est utile de se demander ce que comprend le dénominateur de ce ratio. Le périmètre du dénominateur influence évidemment le résultat obtenu. 
 
@@ -611,7 +617,7 @@ Lorsqu'il est question de **.red[ratio]**, il est utile de se demander ce que co
 .footnote[[Source](https://www.huffingtonpost.fr/2012/09/06/taux-chomage-bit-jeunes-dom_n_1860232.html)]
 
 ---
-### Le périmètre du dénominateur
+### Le périmètre du .red[dénominateur]
 
 - Est-ce que cela signifie que près d'un jeune sur 4 est au chômage ?
 
@@ -626,7 +632,7 @@ Lorsqu'il est question de **.red[ratio]**, il est utile de se demander ce que co
 .footnote[Regarder la vidéo ["Un jeune sur quatre au chômage ?"](https://education.francetv.fr/matiere/economie/premiere/video/un-jeune-sur-quatre-au-chomage)]
 
 ---
-### Les représentations graphiques problématiques
+### Les .red[représentations graphiques] problématiques
 
 - Avoir une **.red[échelle discontinue sur les histogrammes]** : il est fréquent de trouver des histogrammes dont l'axe des ordonnées ne démarre pas à 0. Cela a pour conséquence de "tronquer" une partie du graphique et de donner une **présentation biaisée des données**.
 Cela est souvent réalisé consciemment pour faire passer un message
@@ -635,7 +641,7 @@ Cela est souvent réalisé consciemment pour faire passer un message
 .center[<img src="./img/greve.png" height="220"/>]
 
 ---
-### Les représentations graphiques problématiques
+### Les .red[représentations graphiques] problématiques
 
 Voici ce que donne le même graphique mais avec l'axe des ordonnées démarrant à 0 :
 
@@ -648,21 +654,21 @@ Voici ce que donne le même graphique mais avec l'axe des ordonnées démarrant 
 .pull-right[*NB: de nombreux exemples cités dans cette partie proviennent de [cet article des Décodeurs*](https://abonnes.lemonde.fr/les-decodeurs/article/2018/05/22/sept-conseils-pour-ne-pas-se-faire-avoir-par-les-representations-graphiques_5302680_4355770.html) du Monde]
 
 ---
-### Les représentations graphiques problématiques
+### Les .red[représentations graphiques] problématiques
 
 - Avoir une **.red[échelle discontinue sur les graphiques en courbe]** : même problème que pour les histogrammes. Un autre exemple parlant avec un tract du FN (à gauche) et le même graphique, réalisé par Les Décodeurs, avec l'axe des ordonnées partant de 0 (à droite) :
 
 .center[<img src="./img/tractFN.png" height="300"/>]
 
 ---
-### Les représentations graphiques problématiques
+### Les .red[représentations graphiques] problématiques
 
 - Les **.red[graphiques en camembert]** (pie chart) sont à éviter lorsqu'on souhaite représenter des **proportions** :
 
 .center[[<img src="./img/camembert.png" height="350"/>](https://twitter.com/maxcroser/status/857389434756505600)]
 
 ---
-### Les représentations graphiques problématiques
+### Les .red[représentations graphiques] problématiques
 
 - Les **.red[graphiques avec une "Base 100"]** : en fonction de l'année sélectionnée pour être la base 100, les évolutions peuvent fortement changer
 
@@ -671,7 +677,7 @@ Voici ce que donne le même graphique mais avec l'axe des ordonnées démarrant 
 ##### .center[*Marine Le Pen montre un graphique pendant le 1er débat TV de la présidentielle 2017*]
 
 ---
-### Les représentations graphiques problématiques
+### Les .red[représentations graphiques] problématiques
 
 - Les **.red[graphiques avec une "Base 100"]** : en fonction de l'année sélectionnée pour être la base 100, les évolutions peuvent fortement changer
   - A gauche, Production industrielle en Europe, base 100 = **2010**
@@ -682,14 +688,14 @@ Voici ce que donne le même graphique mais avec l'axe des ordonnées démarrant 
 .pull-right[<img src="./img/indus2.png" height="300"/>]
 
 ---
-### Les représentations graphiques problématiques
+### Les .red[représentations graphiques] problématiques
 
 Et si on ne prend pas en compte que l'évolution de la production industrielle, mais celle de l'ensemble du PIB, le graphique évolue significativement
 
 .center[[<img src="./img/indus3.png" height="350"/>](https://twitter.com/henrikenderlein/status/844174756089942016)]
 
 ---
-### Les représentations spatiales
+### Les représentations .red[spatiales]
 
 En fonction de l'**unité spatiale** retenue pour représenter graphiquement les données, les résultats peuvent différer fortement d'une carte à une autre...
 - Exemple avec la représentation des résultats du 1er tour de l'élection présidentielle française de 2017. A gauche les résultats par commune, à droite une carte à anamorphose où la superficie des communes est proportionnelle au nombre de leurs habitants
@@ -698,7 +704,7 @@ En fonction de l'**unité spatiale** retenue pour représenter graphiquement les
 .center[[<img src="./img/presidentielle.png" height="290"/>](https://www.populationdata.net/cartes/france-elections-presidentielles-2017-1er-tour/)]
 
 ---
-### Les représentations spatiales
+### Les représentations .red[spatiales]
 
 - A gauche les résultats par département, à droite les résultats par région
 
@@ -709,7 +715,7 @@ En fonction de l'**unité spatiale** retenue pour représenter graphiquement les
 .footnote[[source](https://abonnes.lemonde.fr/les-decodeurs/article/2017/04/24/premier-tour-de-la-presidentielle-les-resultats-par-region_5116526_4355770.html)]
 
 ---
-### Les représentations spatiales
+### Les représentations .red[spatiales]
 
 Lorsqu'elles sont representées sur des cartes, les données doivent souvent être représentées **relativement à la population**, et non pas en valeur absolue
 - Exemple ici avec, à gauche, le nombre de décès liés à l'alcoolisme en France en 2013. Et à droite, les mêmes données représentées relativement à la population de chaque région
@@ -721,7 +727,7 @@ Lorsqu'elles sont representées sur des cartes, les données doivent souvent êt
 .footnote[[source](https://www.scoresante.org/sindicateurs.html)]
 
 ---
-### Les représentations spatiales
+### Les représentations .red[spatiales]
 
 Soyez attentifs aux couleurs choisies automatiquement par l'outil de visualisation utilisé. Par défaut, **ils adaptent les échelles et les couleurs associées aux nouvelles données,** ce qui peut brouiller les évolutions d'une année à une autre. Ici le taux de décès liés à l'alcoolisme en Bretagne a été divisé par 3 entre 1980 et 2013
 
