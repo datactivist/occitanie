@@ -85,7 +85,8 @@ Les productions de Datactivist sont librement réutilisables selon les termes de
 ---
 ### Des compétences d'.red[interprétation des données] à renforcer
 
-.reduite.center[![](./img/questions_interpréter.png)]
+.center[
+![](./img/questions_interpréter.png)]
 
 ---
 class:inverse,middle,center
