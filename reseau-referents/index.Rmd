@@ -99,6 +99,12 @@ class:inverse,middle,center
 
 ## Introduction au data pipeline
 ---
+### Réutiliser les données : un parcours fait de joies et de déceptions
+
+.reduite.center[
+![](./img/data batman.png)
+
+---
 
 ###  Présentation du .red[data pipeline]
 
@@ -665,7 +671,7 @@ Voici ce que donne le même graphique mais avec l'axe des ordonnées démarrant 
 
 - Les **.red[graphiques en camembert]** (pie chart) sont à éviter lorsqu'on souhaite représenter des **proportions** :
 
-.center[[<img src="./img/camembert.png" height="350"/>](https://twitter.com/maxcroser/status/857389434756505600)]
+.center[[<img src="./img/Camembert.png" height="350"/>](https://twitter.com/maxcroser/status/857389434756505600)]
 
 ---
 ### Les .red[représentations graphiques] problématiques
