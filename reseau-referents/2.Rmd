@@ -1,44 +1,40 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Sensibilisation à la culture des données</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Samuel Goëta, Datactivist" />
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
-  </head>
-  <body>
-    <textarea id="source">
-class: center, middle, inverse, title-slide
-
-# Sensibilisation à la culture des données
-## Réunion du réseau des référents data, Région Occitanie
-### Samuel Goëta, Datactivist
-### Toulouse puis Montpellier , 17 jul 2019
-
 ---
-
+title: "Expédition de données sur l'alimentation"
+subtitle: "Réunion du réseau des référents data, Région Occitanie"
+author: "Samuel Goëta, Datactivist"
+date: "Montpellier puis Toulouse, `r format(Sys.Date(), '%d %b %Y')`"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+params:
+  event: "Expédition de données sur l'alimentation"
+  slug: occitanie/reseau-referents/
+---
 
 layout: true
   
 
-&lt;div class='my-footer'&gt;&lt;span&gt;Sensibilisation à la culture des données&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='0px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='0px'></center></span></div>")` 
 
 
 ---
 
 class: center, middle
 
-Ces slides en ligne : http://datactivist.coop/occitanie/reseau-referents/
+Ces slides en ligne : `r paste0("http://datactivist.coop/", params$slug)`
 
-Sources : https://github.com/datactivist/occitanie/reseau-referents/
+Sources : `r paste0("https://github.com/datactivist/", params$slug)`
 
 
 Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
 
-&lt;BR&gt;
-&lt;BR&gt;
+<BR>
+<BR>
 
 .reduite[![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)]
 
@@ -46,63 +42,17 @@ Les productions de Datactivist sont librement réutilisables selon les termes de
 ---
 ### .red[Objectifs] de la journée
 
-* **Partagez vos expériences** en tant que référent data
-
-* Faire **remonter les besoins** d'appui et de sensibilisation
-
 * Renforcer la **culture des données** du réseau des référents
 
-* Préciser le **cadre juridique des données personnelles**
+* Se mettre **dans la peau d'un réutilisateur**
 
----
-### .red[Le programme] de la journée
-
-9h15 : accueil
-
-9h30 :
-* présentation de la journée,
-* rappel sur les résultats de data position et des éléments de culture de données
-* premières étapes de la méthodologie du _data pipeline_
-
-11h30 : tour de table des besoins du groupe des référents data
-
-12h30 : repas
-
-14h : rappel des principes d'application du RGPD
-
-16h : écueils à éviter dans l’interprétation et la visualisation des données
-
-17h : fin
-
----
-### .red[Rappel] : les 4 champs d'activité de la culture des données
-
-.reduite.center[![](./img/dataposition.png)]
-
-.footnote[Source : [Datactive](https://docs.google.com/presentation/d/1bK0kgQEf0sFfSHjUcv3gNLsbKsGCU6Ylb_z7IFM-DIw/edit#slide=id.g1bb6c8eb9a_1_27)]
-
----
-### Des compétences d'.red[interprétation des données] à renforcer
-
-.reduite[
-.center[![](./img/distribution_competences.png)]]
-
----
-### Des compétences d'.red[interprétation des données] à renforcer
-
-.center[
-![](./img/questions_interpreter.png)]
+* Comprendre **comment améliorer l'ouverture de ses données**
 
 ---
 class:inverse,middle,center
 
-## Introduction au data pipeline
+## Rappel : le data pipeline
 
----
-
-class:inverse,middle,center
-
-## Introduction au data pipeline
 ---
 ### Réutiliser les données : un parcours fait de joies et de déceptions
 
@@ -111,7 +61,7 @@ class:inverse,middle,center
 
 ---
 
-###  Présentation du .red[data pipeline]
+### Présentation du .red[data pipeline]
 
 .pull-left[
 .reduite[![](./img/Data_pipeline_FR_transparent.png)]
@@ -150,6 +100,17 @@ Nous allons suivre la méthodologie du [Data Pipeline](http://schoolofdata.org/m
 .footnote[[](https://fr.okfn.org/2014/07/03/a-la-conquete-des-donnees-sur-la-pollution-de-lair/)]
 
 ---
+### Les angles proposés par l'équipe agriculture/alimentation
+
+* Quel pourcentage de la viande consommée en restauration collective provient d'Occitanie ?
+
+* Quels sont les produits originaires d’Occitanie ? A quel niveau (création, assemblage, emballage, autre ?) 
+
+* Quel niveau de détail de traçabilité de l’origine Occitanie pouvons-nous avoir ? Par exemple dans le cas d’une viande : né/élevé/abattu en Occitanie ? Dans le cas de produits transformés en Occitanie (confiture, plats préparés, yaourt..) : peut-on avoir l’origine de la matière première ?
+
+* Par catégorie de produits : quels volumes de production en Occitanie ? (voir peut-être du côté de Agreste, ou France Agri Mer pour les données)
+
+---
 
 ### Trouver
 
@@ -161,7 +122,6 @@ Nous allons suivre la méthodologie du [Data Pipeline](http://schoolofdata.org/m
 #### Utiliser les opérateurs spéciaux
 
 #### Chercher sur les portails open data
-
 #### Utiliser les facettes pour trouver les bonnes données
 
 #### Extraire des données d'OpenStreetMap
@@ -338,7 +298,7 @@ data.gouv.fr permet aux usagers de discuter autour des données, cela vous aider
 
 [OpenRefine](http://openrefine.org/) est un outil puissant pour explorer, transformer et rapprocher des données. 
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/cO8NVCs_Ba0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cO8NVCs_Ba0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 .footnote[Mathieu Saby a publié un [tutoriel complet](http://opendata.maregionsud.fr/fileadmin/user_upload/tx_ausynews/ODL/ODL_OpenRefine_Marseille_2017-06-09-v2.pdf). ]
 
@@ -399,17 +359,17 @@ Workbench propose de nombreux outils de traitement et de visualisation des donn�
 ---
 ### .red[La data visualisation] : pour quoi faire?
 
-&lt;BR&gt;
+<BR>
 
-&gt; "La visualisation des données est un ensemble de méthodes de représentation graphique, en deux ou trois dimensions.
-&gt;
-&gt; *https://fr.wikipedia.org/wiki/Visualisation_de_donn%C3%A9es*
+> "La visualisation des données est un ensemble de méthodes de représentation graphique, en deux ou trois dimensions.
+>
+> *https://fr.wikipedia.org/wiki/Visualisation_de_donn%C3%A9es*
 
-&lt;BR&gt;
+<BR>
 
-&gt; "C'est une pratique consistant à mettre en image des données brutes, les rendant ainsi plus accessibles et compréhensibles. Elle donne du sens à ces données."
-&gt;
-&gt; .red[*Toucan Toco*]
+> "C'est une pratique consistant à mettre en image des données brutes, les rendant ainsi plus accessibles et compréhensibles. Elle donne du sens à ces données."
+>
+> .red[*Toucan Toco*]
 
 ---
 ### .red[Un exemple] de dataviz
@@ -466,10 +426,10 @@ Selon l'Organisation internationale des migrations, 3108 migrant·e·s ont trouv
 - De cette intention découlera le **type de dataviz** à utiliser.
 
 --
-&lt;Br&gt;
-&lt;div style="text-align: center"&gt;
- &lt;img src="img/Intention.PNG" width="600"/&gt;
-&lt;/div&gt;
+<Br>
+<div style="text-align: center">
+ <img src="img/Intention.PNG" width="600"/>
+</div>
 
 ---
 
@@ -508,7 +468,7 @@ https://datavizproject.com/
 
 Souvent les données sont accompagnées de **contexte et d'analyse**, qui donnent lieu à une certaine .red[**interprétation**]. Ces éléments peuvent différer d'une source à une autre, il est donc utile de les croiser régulièrement. 
 
-.pull-left[&lt;img src="./img/interpretation.png" height="350"/&gt;]
+.pull-left[<img src="./img/interpretation.png" height="350"/>]
 
 .pull-right[Ici un exemple classique des divergences d'interprétation des données mensuelles du chômage (Sept 2017). Essayez de remonter directement aux producteurs de données "primaires", ici Pole Emploi, si vous souhaitez approfondir votre analyse en évitant le *"bruit éditorial"*]
 
@@ -516,7 +476,7 @@ Souvent les données sont accompagnées de **contexte et d'analyse**, qui donnen
 
 ### En guise de .red[rappel]... :)
 
-.center[&lt;img src="./img/pollution.png" height="400"/&gt;]
+.center[<img src="./img/pollution.png" height="400"/>]
 
 .footnote[© Xavier Gorce]
 
@@ -530,44 +490,44 @@ D'après-vous, l'écart est-il significatif entre le salaire moyen et médian ?
 - Salaire mensuel **.red[median]** net en France en 2014 (secteur privé) : **1 783€**
 Soit une différence de près de **450€** !
 
-.center[[&lt;img src="./img/salaireinsee.png" height="340"/&gt;](https://www.insee.fr/fr/statistiques/2121609#consulter)]
+.center[[<img src="./img/salaireinsee.png" height="340"/>](https://www.insee.fr/fr/statistiques/2121609#consulter)]
 
 ---
 ### .red[Médiane] ou Moyenne ?
 
 Rappelez-vous que **la moyenne est très sensible aux .red[valeurs extrêmes]...**
 
-.center[[&lt;img src="./img/milliardaire.png" height="400"/&gt;](https://www.insee.fr/fr/statistiques/2121609#consulter)]
+.center[[<img src="./img/milliardaire.png" height="400"/>](https://www.insee.fr/fr/statistiques/2121609#consulter)]
 
 ---
 ### .red[Corrélation] ou causalité ?
 
-Rappel : une corrélation fortement positive, avec un coefficient de corrélation (r) &gt; 0,5, signifie seulement que deux variables évoluent dans le même sens. Cela ne dit **rien** sur le possible lien entre elles
+Rappel : une corrélation fortement positive, avec un coefficient de corrélation (r) > 0,5, signifie seulement que deux variables évoluent dans le même sens. Cela ne dit **rien** sur le possible lien entre elles
 - Faites attention aux **corrélations fallacieuses** !
 - Exemple ici avec la corrélation quasi parfaite entre la consommation de fromage par personne et le nombre de personnes qui décèdent étranglées dans leurs draps
 
-.center[[&lt;img src="./img/spurious.png" height="250"/&gt;](http://tylervigen.com/spurious-correlations)]
+.center[[<img src="./img/spurious.png" height="250"/>](http://tylervigen.com/spurious-correlations)]
 
 ---
 ### .red[Corrélation] ou causalité ?
 
 A l'instar du site parodique ["Spurious Correlations"](http://tylervigen.com/spurious-correlations) dont le graphique précédent est issu, les Décodeurs du monde ont récemment lancé un [générateur aléatoire de comparaisons](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html). Un bon moyen pour ne plus jamais faire la confusion entre corrélation ou causalité !
 
-.center[&lt;img src="./img/decodeurs.png" height="350"/&gt;]
+.center[<img src="./img/decodeurs.png" height="350"/>]
 
 ---
 ### .red[Corrélation] ou causalité ?
 
 - En ce qui concerne les corrélations, il faut être attentif au **.red[nombre d'unités observées]** : moins il y a d'observations, plus la corrélation est facilement élevée. Ce n'est pas pareil de regarder la corrélation entre 2 variables sur 13 régions ou sur 35 000 villes
 
-.center[&lt;img src="./img/correlation.png" height="180"/&gt;]
+.center[<img src="./img/correlation.png" height="180"/>]
 
 - Il faut également être prudent sur l'échelle spatiale utilisée : la corrélation entre le % d'immigrants et le vote FN est positif à l'échelle du département. Mais à l'intérieur de ces départements, **ce sont dans les zones avec la plus faible proportion d'immigrants que les personnes votent FN**. Ainsi, au niveau micro la corrélation peut être inversée que ce qui était observé au niveau macro
 
 ---
 ### .red[Corrélation] ou causalité ?
 
-.center[&lt;img src="./img/lebras.png" height="350"/&gt;]
+.center[<img src="./img/lebras.png" height="350"/>]
 
 .footnote[Credits Hervé Le Bras]
 
@@ -579,15 +539,15 @@ A l'instar du site parodique ["Spurious Correlations"](http://tylervigen.com/spu
 - Est-ce que cela signifie que les personnes qui ont le plus de difficultés votent FN ?
   - Pas forcément, pourquoi ?
   
-&gt; Il serait cependant inexact d’en déduire que ce vote est celui des pauvres et des laissés pour compte. Ces derniers s’abstiennent le plus souvent. On doit plutôt constater que c’est le vote des régions pauvres, celles où beaucoup craignent les accidents de la vie car ils voient leurs proches atteints par eux.
+> Il serait cependant inexact d’en déduire que ce vote est celui des pauvres et des laissés pour compte. Ces derniers s’abstiennent le plus souvent. On doit plutôt constater que c’est le vote des régions pauvres, celles où beaucoup craignent les accidents de la vie car ils voient leurs proches atteints par eux.
 
 Hervé Le Bras, dans son article pour The Conversation ["La France inégale : Qui vote FN ? Pas forcément ceux à qui l’on pense"](https://theconversation.com/la-france-inegale-qui-vote-fn-pas-forcement-ceux-a-qui-lon-pense-75977) (**obligatoire**)
 
 ---
 ### .red[Corrélation] ou causalité ?
 
-&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
-.center[&lt;img src="./img/causalite.png" height="200"/&gt;]
+<BR><BR><BR>
+.center[<img src="./img/causalite.png" height="200"/>]
 
 .footnote[Credits XKCD]
 
@@ -597,7 +557,7 @@ Hervé Le Bras, dans son article pour The Conversation ["La France inégale : Qu
 Il existe des facteurs qu'on ne voit pas ou auxquels on ne pense généralement pas mais qui peuvent fortement influer sur des résultats.
 - Exemple ici avec la forte baisse du nombre de décès sur les routes en France entre 2003 et 2014
 
-.center[&lt;img src="./img/routes.png" height="100"/&gt;]
+.center[<img src="./img/routes.png" height="100"/>]
 
 - Est-ce que les politiques actives de lutte contre l'insécurité routière mises en place dans les années 2000 sont la seule explication de cette baisse ? D'autres facteurs "cachés" peuvent aussi avoir eu un rôle significatif
 
@@ -623,7 +583,7 @@ Lorsqu'il est question de **.red[ratio]**, il est utile de se demander ce que co
 
 - Est-ce que cela signifie que près d'un jeune sur 4 est au chômage ?
 
-.center[&lt;img src="./img/chomage1.png" height="150"/&gt;]
+.center[<img src="./img/chomage1.png" height="150"/>]
 
 .footnote[[Source](https://www.huffingtonpost.fr/2012/09/06/taux-chomage-bit-jeunes-dom_n_1860232.html)]
 
@@ -649,18 +609,18 @@ Lorsqu'il est question de **.red[ratio]**, il est utile de se demander ce que co
 Cela est souvent réalisé consciemment pour faire passer un message
   - Exemple avec [le communiqué de presse de la SNCF](https://www.sncf.com/sncv1/ressources/cp_taux_de_participation_4_avril_2018.pdf) durant la grève des cheminots (avril 2018) sur le taux de grévistes :
   
-.center[&lt;img src="./img/greve.png" height="220"/&gt;]
+.center[<img src="./img/greve.png" height="220"/>]
 
 ---
 ### Les .red[représentations graphiques] problématiques
 
 Voici ce que donne le même graphique mais avec l'axe des ordonnées démarrant à 0 :
 
-.pull-left[&lt;img src="./img/greve2.png" height="350"/&gt;]
+.pull-left[<img src="./img/greve2.png" height="350"/>]
 
 .pull-right[*Pas le même rendu, n'est-ce pas ? ;)*]
 
-  &lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+  <BR><BR><BR><BR><BR>
 
 .pull-right[*NB: de nombreux exemples cités dans cette partie proviennent de [cet article des Décodeurs*](https://abonnes.lemonde.fr/les-decodeurs/article/2018/05/22/sept-conseils-pour-ne-pas-se-faire-avoir-par-les-representations-graphiques_5302680_4355770.html) du Monde]
 
@@ -669,21 +629,21 @@ Voici ce que donne le même graphique mais avec l'axe des ordonnées démarrant 
 
 - Avoir une **.red[échelle discontinue sur les graphiques en courbe]** : même problème que pour les histogrammes. Un autre exemple parlant avec un tract du FN (à gauche) et le même graphique, réalisé par Les Décodeurs, avec l'axe des ordonnées partant de 0 (à droite) :
 
-.center[&lt;img src="./img/tractFN.png" height="300"/&gt;]
+.center[<img src="./img/tractFN.png" height="300"/>]
 
 ---
 ### Les .red[représentations graphiques] problématiques
 
 - Les **.red[graphiques en camembert]** (pie chart) sont à éviter lorsqu'on souhaite représenter des **proportions** :
 
-.center[[&lt;img src="./img/Camembert.png" height="350"/&gt;](https://twitter.com/maxcroser/status/857389434756505600)]
+.center[[<img src="./img/Camembert.png" height="350"/>](https://twitter.com/maxcroser/status/857389434756505600)]
 
 ---
 ### Les .red[représentations graphiques] problématiques
 
 - Les **.red[graphiques avec une "Base 100"]** : en fonction de l'année sélectionnée pour être la base 100, les évolutions peuvent fortement changer
 
-.center[[&lt;img src="./img/mlp1.png" height="320"/&gt;](https://www.lemonde.fr/les-decodeurs/article/2017/03/21/les-manipulations-graphiques-de-marine-le-pen-sur-l-euro_5098439_4355770.html)]
+.center[[<img src="./img/mlp1.png" height="320"/>](https://www.lemonde.fr/les-decodeurs/article/2017/03/21/les-manipulations-graphiques-de-marine-le-pen-sur-l-euro_5098439_4355770.html)]
 
 ##### .center[*Marine Le Pen montre un graphique pendant le 1er débat TV de la présidentielle 2017*]
 
@@ -694,16 +654,16 @@ Voici ce que donne le même graphique mais avec l'axe des ordonnées démarrant 
   - A gauche, Production industrielle en Europe, base 100 = **2010**
   - A droite, Production industrielle en Europe, base 100 = **1974**
 
-.pull-left[&lt;img src="./img/indus1.png" height="300"/&gt;]
+.pull-left[<img src="./img/indus1.png" height="300"/>]
 
-.pull-right[&lt;img src="./img/indus2.png" height="300"/&gt;]
+.pull-right[<img src="./img/indus2.png" height="300"/>]
 
 ---
 ### Les .red[représentations graphiques] problématiques
 
 Et si on ne prend pas en compte que l'évolution de la production industrielle, mais celle de l'ensemble du PIB, le graphique évolue significativement
 
-.center[[&lt;img src="./img/indus3.png" height="350"/&gt;](https://twitter.com/henrikenderlein/status/844174756089942016)]
+.center[[<img src="./img/indus3.png" height="350"/>](https://twitter.com/henrikenderlein/status/844174756089942016)]
 
 ---
 ### Les représentations .red[spatiales]
@@ -712,16 +672,16 @@ En fonction de l'**unité spatiale** retenue pour représenter graphiquement les
 - Exemple avec la représentation des résultats du 1er tour de l'élection présidentielle française de 2017. A gauche les résultats par commune, à droite une carte à anamorphose où la superficie des communes est proportionnelle au nombre de leurs habitants
 
 
-.center[[&lt;img src="./img/presidentielle.png" height="290"/&gt;](https://www.populationdata.net/cartes/france-elections-presidentielles-2017-1er-tour/)]
+.center[[<img src="./img/presidentielle.png" height="290"/>](https://www.populationdata.net/cartes/france-elections-presidentielles-2017-1er-tour/)]
 
 ---
 ### Les représentations .red[spatiales]
 
 - A gauche les résultats par département, à droite les résultats par région
 
-.pull-left[&lt;img src="./img/presidentielle2.png" height="350"/&gt;]
+.pull-left[<img src="./img/presidentielle2.png" height="350"/>]
 
-.pull-right[&lt;img src="./img/presidentielle3.png" height="350"/&gt;]
+.pull-right[<img src="./img/presidentielle3.png" height="350"/>]
 
 .footnote[[source](https://abonnes.lemonde.fr/les-decodeurs/article/2017/04/24/premier-tour-de-la-presidentielle-les-resultats-par-region_5116526_4355770.html)]
 
@@ -731,9 +691,9 @@ En fonction de l'**unité spatiale** retenue pour représenter graphiquement les
 Lorsqu'elles sont representées sur des cartes, les données doivent souvent être représentées **relativement à la population**, et non pas en valeur absolue
 - Exemple ici avec, à gauche, le nombre de décès liés à l'alcoolisme en France en 2013. Et à droite, les mêmes données représentées relativement à la population de chaque région
 
-.pull-left[&lt;img src="./img/alcoolisme2.png" height="270"/&gt;]
+.pull-left[<img src="./img/alcoolisme2.png" height="270"/>]
 
-.pull-right[&lt;img src="./img/alcoolisme1.png" height="270"/&gt;]
+.pull-right[<img src="./img/alcoolisme1.png" height="270"/>]
 
 .footnote[[source](https://www.scoresante.org/sindicateurs.html)]
 
@@ -742,9 +702,9 @@ Lorsqu'elles sont representées sur des cartes, les données doivent souvent êt
 
 Soyez attentifs aux couleurs choisies automatiquement par l'outil de visualisation utilisé. Par défaut, **ils adaptent les échelles et les couleurs associées aux nouvelles données,** ce qui peut brouiller les évolutions d'une année à une autre. Ici le taux de décès liés à l'alcoolisme en Bretagne a été divisé par 3 entre 1980 et 2013
 
-.pull-left[&lt;img src="./img/scor1.png" height="290"/&gt;]
+.pull-left[<img src="./img/scor1.png" height="290"/>]
 
-.pull-right[&lt;img src="./img/scor2.png" height="290"/&gt;]
+.pull-right[<img src="./img/scor2.png" height="290"/>]
 
 .footnote[[source](https://www.scoresante.org/sindicateurs.html)]
 
@@ -756,94 +716,3 @@ class:inverse, middle, center
 # Merci !
 
 Contact : [samuel@datactivist.coop](mailto:samuel@datactivist.coop)
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();</script>
-
-<script>
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
